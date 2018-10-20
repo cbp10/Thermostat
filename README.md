@@ -20,7 +20,4 @@ I would like to be able to decrease the temperature
 
 The thermostat has a minimum and maximum temperature and also has a power saving mode, which limits the maximum temperature.
 
-The thermostat can be interaceted with by opening the index.html file in a browser window.
-
-
-
+The thermostat can be interacted with by opening the index.html file in the project root in a browser window.
