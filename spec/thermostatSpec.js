@@ -52,4 +52,10 @@ describe("Thermostat", function() {
     }
     expect(thermostat.getCurrentTemp()).toEqual(32);
   });
+
+  it("should be able to reset temperature", function() {
+    thermostat.up()
+    thermostat.resetTemp()
+    expect(thermostat.getCurrentTemp()).toEqual(20);
+  })
 });
