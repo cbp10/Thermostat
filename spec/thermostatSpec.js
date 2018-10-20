@@ -27,4 +27,9 @@ describe("Thermostat", function() {
     }
     expect(thermostat.getCurrentTemp()).toEqual(10);
   });
+
+  it("should return whether or not it is in power saving mode", function() {
+    console.log(thermostat)
+    expect(thermostat.isPowerSavingOn()).toEqual(true);
+  });
 });
