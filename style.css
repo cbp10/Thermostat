@@ -3,11 +3,11 @@ body {
 }
 
 .title {
-  margin-left: 140px;
+  margin-left: 110px;
 }
 
 #temperature {
-  margin-left: 210px;
+  margin-left: 180px;
 }
 
 .buttons button {
@@ -22,7 +22,7 @@ body {
   height: 50px;
   border: 1px solid black;
   border-radius: 25px;
-  margin-left: 195px
+  margin-left: 165px
 }
 
 .low-usage {
