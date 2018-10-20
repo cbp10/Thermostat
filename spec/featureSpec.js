@@ -11,5 +11,9 @@ describe("using thermostat", function() {
     expect(thermostat.getCurrentTemp()).toEqual(20);
   });
 
+  it("should increase the temperture by 1", function() {
+    thermostat.up();
+    expect(thermostat.getCurrentTemp()).toEqual(21);
+  });
 
 });
