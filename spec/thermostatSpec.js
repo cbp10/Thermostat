@@ -29,7 +29,6 @@ describe("Thermostat", function() {
   });
 
   it("should return whether or not it is in power saving mode", function() {
-    console.log(thermostat)
     expect(thermostat.isPowerSavingOn()).toEqual(true);
   });
 
@@ -37,5 +36,20 @@ describe("Thermostat", function() {
     expect(thermostat.isPowerSavingOn()).toEqual(true);
     thermostat.switchPowerSavingMode()
     expect(thermostat.isPowerSavingOn()).toEqual(false);
+  });
+
+  it("should not exceed max temp of 25 when power saving on", function() {
+    for (var i = 0; i < 6; i++) {
+          thermostat.up();
+    }
+    expect(thermostat.getCurrentTemp()).toEqual(25);
+  });
+
+  it("should not exceed max temp of 32 when power saving off", function() {
+    thermostat.switchPowerSavingMode()
+    for (var i = 0; i < 13; i++) {
+          thermostat.up();
+    }
+    expect(thermostat.getCurrentTemp()).toEqual(32);
   });
 });
