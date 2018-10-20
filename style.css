@@ -1,0 +1,44 @@
+body {
+  background-color: ivory;
+}
+
+.title {
+  margin-left: 140px;
+}
+
+#temperature {
+  margin-left: 210px;
+}
+
+.buttons button {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 10%;
+  padding: 5px;
+}
+
+#usage-level {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-left: 195px
+}
+
+.low-usage {
+  background-color: green;
+}
+.medium-usage {
+  background-color: white;
+}
+.high-usage {
+  background-color: red;
+}
+
+.psm-true {
+  background-color: aquamarine
+}
+
+.psm-false {
+  background-color: dimgrey
+}
